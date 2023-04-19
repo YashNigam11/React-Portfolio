@@ -1,0 +1,103 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.contact-heading-child {
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin-bottom: 25px;
+}
+.contact-heading-child h2 {
+  font-weight: bold;
+}
+.contact-sec {
+  display: flex;
+  gap: 72px;
+  width: 65%;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #1f2235;
+  padding: 20px;
+}
+.contact-sec h3 {
+  color: white;
+}
+.contact-social-media i {
+  color: white;
+  padding: 8px;
+  padding-left: 0px;
+}
+.contact-social-media i:hover {
+  transform: scale(1.5);
+}
+.contact-img {
+  margin-top: 30px;
+}
+.contact-img img {
+  content: url("../../assets/Contact/contac.jpg");
+}
+.contact-form {
+  background-color: #f1f1f1;
+  padding: 25px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  /* width: 600px; */
+}
+.contact-form form {
+  display: inline-block;
+  box-sizing: border-box;
+}
+label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 10px;
+}
+button{
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    background-color: red;
+    color: wheat;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-container{
+    height: 100%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .contact-container{
+    height: 100%;
+    margin-top: 30px;
+  }
+  .contact-sec{
+    flex-direction: column;
+  }
+  .contact-bg{
+    
+    text-align: center;
+  }
+  .contact-form{
+    width: auto;
+  }
+}
+@media screen and (max-width:415px) {
+  .contact-sec{
+    width: 80%;
+  }
+  
+}
